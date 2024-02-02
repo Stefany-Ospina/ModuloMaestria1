@@ -1,5 +1,6 @@
 import sqlite3
 
+
 def leer_datos():
   conn = sqlite3.connect("censo.db")
   cursor = conn.cursor()
@@ -14,5 +15,6 @@ def leer_datos():
   # Cerrar la conexión a la base de datos
   conn.close()
 
+
 if __name__ == '__main__':
-    leer_datos()
+  leer_datos()
